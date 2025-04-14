@@ -68,7 +68,15 @@ dependencies {
     //hilt
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     kapt(libs.hilt.android.compiler)
+
+    testImplementation(libs.mockitoCore)
+    testImplementation(libs.kotlinMockito)
+    testImplementation(libs.coroutinesTest)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
